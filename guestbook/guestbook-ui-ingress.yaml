@@ -7,8 +7,6 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
-  selector:
-    app: guestbook-ui
   ingressClassName: nginx
   rules:
   - http:
